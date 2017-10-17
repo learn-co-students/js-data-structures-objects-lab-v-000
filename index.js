@@ -5,12 +5,12 @@ function updateDriverWithKeyAndValue(driver, key, value) {
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
-     driver[key] = value;
+     const driver[key] = value;
      return driver;
 }
 
 function deleteFromDriverByKey(driver, key){
-    driver_clone = Object.assign({}, driver);
+    const driver_clone = Object.assign({}, driver);
     delete driver_clone[key];
     return driver_clone;
 }
