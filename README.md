@@ -1,5 +1,16 @@
 # Objects Lab
 
+
+function destructivelyDeleteFromDriverByKey(driver, key) {
+  delete driver[key];
+  return driver;
+
+  //easy peasy
+}
+
+
+
+
 ## Overview
 In this lab, we'll create `driver` objects and perform various operations on them.
 
