@@ -23,7 +23,6 @@ describe('drivers', function () {
 
     it('it does not modify the original driver, but rather returns a clone with the new data', function () {
       updateDriverWithKeyAndValue(driver, 'address', '11 Broadway');
-
       expect(driver['address']).to.equal(undefined);
     });
   });
