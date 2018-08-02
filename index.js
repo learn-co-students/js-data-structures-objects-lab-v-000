@@ -1,5 +1,4 @@
 // Write your solution in this file!
-<<<<<<< HEAD
 'use strict'
 var driver = { };
 function updateDriverWithKeyAndValue(driver, key, value){
@@ -21,17 +20,4 @@ function deleteFromDriverByKey(driver_obj, key){
 function destructivelyDeleteFromDriverByKey(driver_obj, key){
   driver = deleteFromDriverByKey(driver_obj, key)
   return driver
-=======
-var driver = {}
-function updateDriverWithKeyAndValue(driver, key, value){
-
-}
-function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
-
-}
-function deleteFromDriverByKey(driver, key){
-
-}
-function destructivelyDeleteFromDriverByKey(driver, key){
-
 }
