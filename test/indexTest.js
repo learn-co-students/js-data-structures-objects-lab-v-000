@@ -44,9 +44,9 @@ describe('drivers', function () {
 
   describe('deleteFromDriverByKey(driver, key)', function () {
     it('deletes `key` from a clone of driver and returns the new driver (it is non-destructive)', function () {
-      let newdriver = deleteFromDriverByKey(driver, 'name');
+      let newDriver = deleteFromDriverByKey(driver, 'name');
 
-      expect(newdriver['name']).to.equal(undefined);
+      expect(newDriver['name']).to.equal(undefined);
     });
 
     it('does not modify the original driver (it is non-destructive)', function () {
