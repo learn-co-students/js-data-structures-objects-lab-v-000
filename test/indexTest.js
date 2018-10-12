@@ -10,7 +10,6 @@ describe('drivers', function () {
       for (const key in driver) {
         delete driver[key];
       }
-
       driver.name = 'Sam';
     });
 
@@ -51,7 +50,6 @@ describe('drivers', function () {
 
     it('does not modify the original driver (it is non-destructive)', function () {
       deleteFromDriverByKey(driver, 'name');
-
       expect(driver['name']).to.equal('Sam');
     });
   });

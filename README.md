@@ -2,8 +2,7 @@
 
 ## Problem Statement
 
-We covered the concepts of `Object`s in JavaScript. Now it's time to put the
-concepts into practice.
+We covered the concepts of `Object`s in JavaScript. Now it's time to put the concepts into practice.
 
 ## Objectives
 
