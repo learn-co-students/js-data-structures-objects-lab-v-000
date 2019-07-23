@@ -40,20 +40,7 @@ describe('drivers', function() {
     });
   });
 
-  describe('deleteFromDriverByKey(driver, key)', function () {
-    it('deletes `key` from a clone of driver and returns the new driver (it is non-destructive)', function () {
-      let newdriver = deleteFromDriverByKey(driver, 'name');
 
-      expect(newdriver['name']).to.equal(undefined);
-      expect(typeof newdriver).to.equal('object');
-    });
-
-    it('does not modify the original driver (it is non-destructive)', function () {
-      deleteFromDriverByKey(driver, 'name');
-
-      expect(driver['name']).to.equal('Sam');
-    });
-  });
 
   describe('destructivelyDeleteFromDriverByKey(driver, key)', function () {
     it('returns driver without the delete key/value pair', function () {
@@ -62,11 +49,6 @@ describe('drivers', function() {
       expect(newdriver['name']).to.equal(undefined);
     });
 
-    it('modifies the original driver', function () {
-      let newdriver = destructivelyDeleteFromDriverByKey(driver, 'name');
-
-      expect(driver['name']).to.equal(undefined);
-      expect(driver).to.equal(newdriver);
-    });
+    
   });
 });
