@@ -24,3 +24,4 @@ function destructivelyDeleteFromDriverByKey(driver, key) {
   return driver;
 }
 
+// I tried to delete using the dot notation, delete driver.key, mas não funcionou. pq?
